@@ -4,6 +4,14 @@ const nextConfig = {
   experimental: {
     missingSuspenseWithCSRBailout: false,
   },
+  async rewrites() {
+    return [
+      {
+        source: "/message", // 요청한 경로
+        destination: `https://blog-egdo4ft4v-beomis-projects.vercel.app/guestbook`, // 내가 사용할 경로
+      },
+    ];
+  },
   async redirects() {
     return [
       {

@@ -27,10 +27,6 @@ function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="false">
-      <meta
-        http-equiv="Content-Security-Policy"
-        content="upgrade-insecure-requests"
-      />
       <body className={inter.className}>
         <RQProvider>
           <MSWComponent />
