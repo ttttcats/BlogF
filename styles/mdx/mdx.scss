@@ -1,0 +1,26 @@
+.call_out {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 1rem;
+
+}
+
+.call_out.sucess {
+    background-color: rgb(234, 245, 234);
+}
+
+.call_out.info {
+    background-color: rgb(222, 240, 252);
+}
+
+.call_out.warning {
+    background-color: rgb(254, 242, 230);
+}
+
+.call_out.critical {
+    background-color: rgb(248, 226, 226);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

@@ -1,0 +1,47 @@
+.main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+
+    
+}
+
+.mainWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    // border: 1px solid red;
+    a{
+        list-style: none;
+        border: none;
+        text-decoration: none;
+            color: var(--color-text);
+    }
+
+    .section {
+        // border: 1px solid blue;
+        border-radius: 10px;
+        height: 300px;
+        
+        background-color: var(--color-navil-color);
+    
+       }
+
+    }
+.section:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+@media all and (max-width:630px){
+    .mainWrapper{
+        .section {
+            height: 500px;
+            
+        }
+    }
+}

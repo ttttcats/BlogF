@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+
+// a {
+//   text-decoration: none;
+//   color: var(--color-text);
+// }
+
+.ul {
+    font-family: "DoHyeon-Regular";
+  font-weight: 500;
+  font-style: normal;
+  
+}
+.detail_container{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+
+  h1{
+    font-family: "DoHyeon-Regular";
+    font-size: 60px;
+    font-weight: 400;
+  }
+}
+.category{
+  display: flex;
+  justify-content: space-between;
+  a{
+    text-decoration: none;
+    color: var(--color-signiture-color);
+    font-weight: bold;
+  }
+  time {
+    font-weight: bold;
+  }
+}

@@ -3,22 +3,58 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev:content": "velite --watch",
+    "build:content": "velite --clean",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "mock": "npx tsx watch ./mocks/http.ts"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
+    "@shikijs/rehype": "^1.2.4",
+    "@tanstack/react-query": "^5.29.2",
+    "clsx": "^2.1.0",
+    "cookies-next": "^4.1.1",
+    "dayjs": "^1.11.10",
+    "next": "14.1.4",
+    "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.4"
+    "react-hook-form": "^7.51.3",
+    "react-intersection-observer": "^9.8.2",
+    "rehype-accessible-emojis": "^0.3.2",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-external-links": "^3.0.0",
+    "rehype-highlight": "^7.0.0",
+    "rehype-pretty-code": "^0.13.1",
+    "rehype-slug": "^6.0.0",
+    "remark-comment": "^1.0.0",
+    "remark-gfm": "^4.0.0",
+    "sass": "^1.72.0",
+    "socket.io-client": "^4.7.5",
+    "zod": "^3.23.4",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@mswjs/http-middleware": "^0.10.0",
+    "@svgr/webpack": "^8.1.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "cors": "^2.8.5",
     "eslint": "^8",
-    "eslint-config-next": "14.1.4"
+    "eslint-config-next": "14.1.4",
+    "msw": "^2.2.13",
+    "typescript": "^5",
+    "velite": "^0.1.0-beta.13"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }
