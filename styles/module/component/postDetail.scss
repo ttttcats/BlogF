@@ -40,6 +40,8 @@
         a{
             color: var(--color-signiture-color);
             font-weight: bold;
+            word-break: break-all;
+            font-family: Pretendard-Bold;
         }
     }
     ol {
@@ -69,7 +71,7 @@
     }
    
     table {
-
+        width: 100%;
             margin-top: 20px;
             margin-bottom: 20px;
             // width: 100%; 
@@ -78,12 +80,27 @@
             border: 1px solid #444444;
             border-collapse: collapse;
             overflow: auto;
+            vertical-align: baseline;
+            justify-content: center;
     }
    
-    th, td {
+    tr {
         overflow: auto;
             border: 1px solid #444444;
             padding: 10px;
+
+    }
+    th,td {
+        text-align: start;
+    padding: 20px 20px;
+    font-size: 24px;
+        
+        padding-left: 20px;
+    }
+    img{
+        display: block;
+        max-width: 100%;
+        margin: 1.5rem auto;
     }
     figure {
         overflow: scroll;
