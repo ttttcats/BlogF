@@ -12,7 +12,7 @@ import { usePathname } from "next/navigation";
 import React from "react";
 function SideBar() {
   const path = usePathname();
-  console.log("path :: ", path.split("/")[1]);
+  // console.log("path :: ", path.split("/")[1]);
 
   const handleHeadingClick = (id: string): void => {
     const element = document.getElementById(id);

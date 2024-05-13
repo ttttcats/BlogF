@@ -31,12 +31,12 @@ function Message() {
       ]);
       const newMessages = exMessages;
       newMessages?.push(data);
-      console.log("newMessages :::", newMessages);
+      // console.log("newMessages :::", newMessages);
       queryClient.setQueryData(["message"], newMessages);
       queryClient.resetQueries({
         queryKey: ["message"],
       });
-      console.log("receiveMessage useEffect :: ", data);
+      // console.log("receiveMessage useEffect :: ", data);
     });
 
     // const exMessages: messageProps[] | undefined = queryClient.getQueryData([

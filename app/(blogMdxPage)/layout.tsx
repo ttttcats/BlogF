@@ -14,11 +14,11 @@ type Props = {
 export default function BLlogMdxPageLayout({ children }: Props) {
   const [postElement, setPostElement] = useState<HTMLElement | null>(null);
 
-  console.log("postElement =", postElement);
+  // console.log("postElement =", postElement);
   const headingElements =
     postElement && Array.from(postElement?.querySelectorAll("h2,h3"));
 
-  console.log("headingElements =", headingElements);
+  // console.log("headingElements =", headingElements);
 
   return (
     <div className={styles.container}>

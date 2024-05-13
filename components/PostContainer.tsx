@@ -22,7 +22,7 @@ type InfiniteProps = {
   TotalPage: number;
 };
 export default function PostContainer({ category }: Props) {
-  console.log("category : ", category);
+  // console.log("category : ", category);
   const { ref, inView } = useInView({
     threshold: 0,
     delay: 0,

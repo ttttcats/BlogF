@@ -20,11 +20,11 @@ interface BlogDetailProps {
 dayjs.locale("ko");
 const getPost = async (params: BlogDetailProps["params"]) => {
   const slug = params?.slug?.join("/");
-  console.log("slug: ", slug);
+  // console.log("slug: ", slug);
   const post = posts.find((post) => post.permalink === slug);
-  console.log("왜ㅔ 안나옴");
+  // console.log("왜ㅔ 안나옴");
 
-  console.log("내부: ", post?.permalink.split("/")[0]);
+  // console.log("내부: ", post?.permalink.split("/")[0]);
 
   return post;
 };
@@ -32,10 +32,10 @@ const getPost = async (params: BlogDetailProps["params"]) => {
 export async function generateMetadata({
   params,
 }: BlogDetailProps): Promise<Metadata> {
-  console.log("params :", params);
+  // console.log("params :", params);
 
   const post = await getPost(params);
-  console.log("post :", post);
+  // console.log("post :", post);
   // console.log("post.tuhmnail :", post?.thumbnail);
   if (!post || !post.published) {
     return {};

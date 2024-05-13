@@ -11,7 +11,7 @@ export default function useSocket() : [Socket | null , ()=>void] {
     },[]);
     
     useEffect(()=>{
-        console.log('소켓');
+        // console.log('소켓');
         
         if(!socket ) {
             socket = io(`${process.env.NEXT_PUBLIC_BACK_BASE_URL}/messages`, {

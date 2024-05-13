@@ -10,7 +10,7 @@ type Props = {
   children: React.ReactNode;
 };
 export default async function afterLoginLayout({ children }: Props) {
-  console.log("레이아웃");
+  // console.log("레이아웃");
   const queryClient = new QueryClient();
   // const { data, isLoading } = useQuery<messageProps[]>({
   //   queryKey: ["message"],

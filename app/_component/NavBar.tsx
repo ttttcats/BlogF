@@ -9,7 +9,7 @@ import { urlPathName } from "@/util/searchParam";
 import React from "react";
 function NavBar() {
   const segment = useSelectedLayoutSegment();
-  console.log("segment : ", segment);
+  // console.log("segment : ", segment);
 
   const getCategory = utilGetCategory().categoryname;
   const searchQuery = useSearchParams();

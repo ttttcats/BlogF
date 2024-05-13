@@ -18,7 +18,7 @@ export default function Header() {
   // const [co, setco] = useState("false");
 
   setCookie("data-theme", "false");
-  console.log(getCookie("data-theme"));
+  // console.log(getCookie("data-theme"));
   // useEffect(() => {
   //   document.documentElement.setAttribute("data-theme", `${co}`);
   // }, [co]);

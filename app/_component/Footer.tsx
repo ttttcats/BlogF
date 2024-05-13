@@ -3,7 +3,7 @@ import styles from "../../styles/module/SideBar.module.scss";
 function Footer() {
   return (
     <div className={styles.footer}>
-      <p>Copyright ©2023 yiyb0603 All rights reserved.</p>
+      <p>Copyright ©2024 BEOM All rights reserved.</p>
     </div>
   );
 }
