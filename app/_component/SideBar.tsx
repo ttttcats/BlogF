@@ -47,7 +47,7 @@ function SideBar() {
           <IconGitHub width="40" height="40" />
           <p>GitHub</p>
         </Link>
-        <Link href={"/"}>
+        {/* <Link href={"/"}>
           <IconLikedIn width="40" height="40" />
           <p>LinkedIn</p>
         </Link>
@@ -58,7 +58,7 @@ function SideBar() {
         <Link href={"/"}>
           <IconInstagram width="40" height="40" />
           <p>Instagram</p>
-        </Link>
+        </Link> */}
       </aside>
     </div>
   );
