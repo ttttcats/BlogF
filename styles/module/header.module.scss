@@ -96,3 +96,15 @@ $Dark-mode-white:white ;
         
     // border: 1px solid black;
 }
+@media all and (max-width : 470px) {
+    
+  .headerFixed{
+    max-width: 400px;
+    margin: 0;
+  }
+  .headerSection{
+    max-width: 360px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}  

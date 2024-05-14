@@ -1,5 +1,5 @@
 .markdown {
-    
+ 
     letter-spacing: 1px;
 
     h2 , h3 {
@@ -175,4 +175,81 @@
         border-radius: 5px;
     }
     
+
+
+
+    table::-webkit-scrollbar {
+        width: 5px;
+        height: 15px;
+    }
+    table::-webkit-scrollbar-track { 
+        background-color: var(--color-navil-color);;
+    }
+    table::-webkit-scrollbar-thumb { 
+        background-color: rgb(33, 150, 243);;
+    }
+    table::-webkit-scrollbar-button {
+        display: none;
+    }
+    
+    /* hover 효과 */
+    table::-webkit-scrollbar-thumb:hover {
+        // background-color: blue;
+        transition: all 0.2s; /* 작동 안 됨 */
+    }
+    
+    /* 코너에 라운드 효과 */
+    table::-webkit-scrollbar-track,
+    table::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+    }
+    
+    
+    
 }
+@media all and (max-width : 470px) {
+    
+        // flex-direction: column-reverse;
+        h1{
+        
+        }
+        a{
+            font-size: 21px;
+        }
+
+        time{
+            font-size: 17px;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+        }
+        p{
+            font-size: 17px;
+        }
+       
+        .markdown{
+            p{
+                font-size: 17px;
+            }
+            td{
+                padding: 20px;
+                font-size: 18px;
+            }
+            table {
+
+                display: block;
+                border: none;
+            }
+              table tbody  {
+                max-height: 100px;
+                overflow-y: scroll;
+              }
+              
+              table thead, table tbody tr td th{
+                // display: table;
+              }
+        }
+
+    
+    }  
